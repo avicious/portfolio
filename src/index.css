@@ -1,0 +1,28 @@
+:root {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #d9ed92;
+  background: #184e77;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 5rem 10rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  body {
+    padding: 2rem 4rem;
+  }
+}

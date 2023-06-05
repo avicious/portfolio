@@ -1,0 +1,33 @@
+.contact {
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact a {
+    color: #b5e48c;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    background-color: #b5e48c;
+    color: #184e77;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.contact img {
+    width: 1.2rem;
+}
+
+@media (max-width: 780px) {
+    .contact {
+        flex-direction: column;
+
+    }
+    .contact a {
+        text-align: center;
+        justify-content: center;
+    }
+}

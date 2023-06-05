@@ -1,0 +1,26 @@
+.work {
+    margin: 4rem 0;
+}
+
+.work h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.job {
+    background-color: #d9ed92;
+    width: fit-content;
+    padding: 0.2rem;
+    color: #184e77;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0.5rem 0;
+}
+
+.work ul {
+    max-width: 500px;
+}
+
+.work ul li {
+    margin-bottom: 0.5rem;
+}

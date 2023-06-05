@@ -1,0 +1,45 @@
+.project {
+    width: 400px;
+    padding: 1rem;
+    background-color: #b5e48c;
+    border-radius: 10px;
+    color: #184e77;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.info {
+    font-size: 1.2rem;
+}
+
+.link {
+    display: flex;
+    gap: 1rem;
+}
+
+.link a {
+    text-decoration: none;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    background-color: #184e77;
+    color: #b5e48c;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.stack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stack img {
+    width: 2rem;
+}

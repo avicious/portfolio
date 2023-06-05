@@ -1,0 +1,37 @@
+.skills {
+    padding: 2rem 1rem;
+    background-color: #1e6091;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.skills h2,
+.learning {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.current,
+.coming {
+    display: flex;
+    padding: 1rem 0 2rem 0;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.current {
+    padding-bottom: 4rem;
+}
+
+.coming {
+    opacity: 0.5;
+}
+
+@media (max-width: 780px) {
+    .current, 
+    .coming {
+        flex-wrap: wrap;
+    }
+}
