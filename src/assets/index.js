@@ -10,7 +10,7 @@ import typescript from "./typescript.svg";
 import nextjs from "./nextjs.svg";
 import HooBank from "./HooBank.webp";
 import Sushi from "./Sushi.webp";
-import MetaVersus from "./MetaVersus.webp";
+import MetaVersus from "./Metaversus.webp";
 
 export {
   email,
