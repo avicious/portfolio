@@ -1,0 +1,56 @@
+.container img {
+  width: 600px;
+}
+
+.project {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  padding: 2rem;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project p {
+  font-size: 18px;
+  letter-spacing: 0.5;
+}
+
+.project a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.next {
+  background-color: #0a0a0a;
+  color: #ededed;
+}
+
+.react {
+  background-color: #61dbfb;
+  color: #0a0a0a;
+}
+
+@media (max-width: 800px) {
+  .container img {
+    width: 300px;
+  }
+  .project {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .links {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
