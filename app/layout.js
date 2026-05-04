@@ -3,11 +3,13 @@ import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
+  variable: "--font-outfit",
   weight: ["400", "500", "600", "700"],
 });
 
 const ovo = Ovo({
   subsets: ["latin"],
+  variable: "--font-ovo",
   weight: ["400"],
 });
 
@@ -20,7 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${outfit.className} ${ovo.className} h-full antialiased`}
+      className={`${outfit.variable} ${ovo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
