@@ -5,10 +5,6 @@ import { useRef } from "react";
 const Navbar = () => {
   const sideMenuRef = useRef();
 
-  const openMenu = () => {
-    sideMenuRef.current.style.transform = "translateX(-16rem)"
-  }
-
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] select-none pointer-events-none">
@@ -62,8 +58,6 @@ const Navbar = () => {
             <Image src={assets.menu_black} alt="menu" className="w-6" />
           </button>
         </div>
-
-        
       </nav>
     </>
   );
