@@ -1,10 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import { useRef } from "react";
 
 const Navbar = () => {
-  const sideMenuRef = useRef();
-
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] select-none pointer-events-none">
