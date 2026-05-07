@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <a href="">
+        <a href="#top">
           <Image
             src={assets.logo}
             alt="Shubham"
@@ -30,6 +30,13 @@ const Navbar = () => {
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
+
+        <div>
+          <a href="#contact">
+            Contact{" "}
+            <Image src={assets.arrow_icon} alt="arrow" className="w-3" />
+          </a>
+        </div>
       </nav>
     </>
   );
