@@ -39,7 +39,11 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div>
+        <div className="flex items-center gap-4">
+          <button className="cursor-pointer">
+            <Image src={assets.moon_icon} alt="dark mode" className="w-6" />
+          </button>
+
           <a
             href="#contact"
             className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-ovo"
@@ -47,6 +51,10 @@ const Navbar = () => {
             Contact{" "}
             <Image src={assets.arrow_icon} alt="arrow" className="w-3" />
           </a>
+
+          <button className="cursor-pointer block md:hidden ml-3">
+            <Image src={assets.menu_black} alt="menu" className="w-6" />
+          </button>
         </div>
       </nav>
     </>
