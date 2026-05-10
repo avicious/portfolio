@@ -78,21 +78,25 @@ export const assets = {
 
 export const workData = [
   {
+    id: 1,
     title: "Frontend project",
     description: "Web Design",
     bgImage: "/work-1.png",
   },
   {
+    id: 2,
     title: "Geo based app",
     description: "Mobile App",
     bgImage: "/work-2.png",
   },
   {
+    id: 3,
     title: "Photography site",
     description: "Web Design",
     bgImage: "/work-3.png",
   },
   {
+    id: 4,
     title: "UI/UX designing",
     description: "UI/UX Design",
     bgImage: "/work-4.png",
@@ -101,12 +105,14 @@ export const workData = [
 
 export const serviceData = [
   {
+    id: 1,
     icon: assets.web_icon,
     title: "Web design",
     description: "Web development is the process of building, programming...",
     link: "",
   },
   {
+    id: 2,
     icon: assets.mobile_icon,
     title: "Mobile app",
     description:
@@ -114,6 +120,7 @@ export const serviceData = [
     link: "",
   },
   {
+    id: 3,
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
@@ -121,6 +128,7 @@ export const serviceData = [
     link: "",
   },
   {
+    id: 4,
     icon: assets.graphics_icon,
     title: "Graphics design",
     description: "Creative design solutions to enhance visual communication...",
