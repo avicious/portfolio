@@ -1,7 +1,6 @@
 "use client";
-import { About, Header, Navbar, Services } from "@/components";
+import { About, Header, Navbar, Services, Work } from "@/components";
 import Contact from "@/components/Contact";
-import Work from "@/components/Work";
 
 export default function Home() {
   return (
