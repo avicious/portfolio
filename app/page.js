@@ -1,6 +1,5 @@
 "use client";
-import { Header, Navbar } from "@/components";
-import About from "@/components/About";
+import { About, Header, Navbar } from "@/components";
 import Contact from "@/components/Contact";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
