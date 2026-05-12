@@ -1,8 +1,7 @@
 "use client";
-import { Navbar } from "@/components";
+import { Header, Navbar } from "@/components";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
-import Header from "@/components/Header";
 import Services from "@/components/Services";
 import Work from "@/components/Work";
 
