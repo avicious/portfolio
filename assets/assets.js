@@ -76,6 +76,7 @@ export const assets = {
   right_arrow_bold_dark,
 };
 
+// For Work Component
 export const workData = [
   {
     id: 1,
@@ -103,6 +104,7 @@ export const workData = [
   },
 ];
 
+// For Services Component
 export const serviceData = [
   {
     id: 1,
@@ -136,6 +138,7 @@ export const serviceData = [
   },
 ];
 
+// For About Component
 export const infoList = [
   {
     id: 1,
@@ -160,6 +163,7 @@ export const infoList = [
   },
 ];
 
+// For About Component
 export const toolsData = [
   { id: 1, tool: assets.vscode },
   { id: 2, tool: assets.firebase },
