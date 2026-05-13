@@ -7,9 +7,7 @@
 
   --font-sans: var(--font-outfit), sans-serif;
   --font-ovo: var(--font-ovo), serif;
-}
 
-@theme {
   --shadow-light: 4px 4px 0 #000;
   --shadow-dark: 4px 4px 0 #fff;
 }
