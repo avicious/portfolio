@@ -48,3 +48,9 @@ cd portfolio
 ```bash
 npm install
 ```
+
+4. **Start the development server:**
+
+```bash
+npm run dev
+```
