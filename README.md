@@ -29,3 +29,10 @@ Follow these steps to get a local copy up and running:
 - **Node.js**
 - **npm** or **yarn**
 
+### Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone
+```
