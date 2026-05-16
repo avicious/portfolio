@@ -36,3 +36,9 @@ Follow these steps to get a local copy up and running:
 ```bash
 git clone
 ```
+
+2. **Navigate to the project directory:**
+
+```bash
+cd agency
+```
