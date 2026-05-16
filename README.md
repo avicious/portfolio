@@ -19,3 +19,7 @@ A modern, fully responsive web application with dark mode built with **React** &
 - **Frontend:** React.js
 - **Build Tool:** Vite
 - **Styling:** Tailwind CSS
+
+## Getting Started
+
+Follow these steps to get a local copy up and running:
