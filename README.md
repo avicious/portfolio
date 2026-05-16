@@ -40,5 +40,11 @@ git clone
 2. **Navigate to the project directory:**
 
 ```bash
-cd agency
+cd portfolio
+```
+
+3. **Install dependencies:**
+
+```bash
+npm install
 ```
