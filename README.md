@@ -23,3 +23,9 @@ A modern, fully responsive web application with dark mode built with **React** &
 ## Getting Started
 
 Follow these steps to get a local copy up and running:
+
+### Prerequisites
+
+- **Node.js**
+- **npm** or **yarn**
+
