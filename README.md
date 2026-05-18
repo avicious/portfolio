@@ -6,7 +6,7 @@ A modern, fully responsive web application with dark mode built with **React** &
 
 ## Live Demo
 
-**Check out the live version of this project here:** 
+<!-- **Check out the live version of this project here:**  -->
 
 ## Features
 
