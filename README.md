@@ -2,7 +2,7 @@
 
 A modern, fully responsive web application with dark mode built with **React** & **TailwindCSS**.
 
-![Project Screenshot](.github/assets/ascend.png)
+<!-- ![Project Screenshot](.github/assets/ascend.png) -->
 
 ## Live Demo
 
