@@ -17,7 +17,8 @@ const About = () => {
         </div>
         <div className="flex-1">
           <p className="mb-10 max-w-2xl font-ovo">
-            
+            I am an experienced Full Stack Developer with over 5 years of
+            professional expertise in the field. 
           </p>
 
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
