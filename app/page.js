@@ -1,10 +1,12 @@
 "use client";
 import { About, Contact, Header, Navbar, Services, Work } from "@/components";
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <Toaster />
       <Header />
       <About />
       <Services />
