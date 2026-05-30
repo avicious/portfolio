@@ -2,8 +2,8 @@ import { assets } from "@/assets/assets";
 import toast from "react-hot-toast";
 import Image from "next/image";
 
-const ACCESS_KEY = process.env.WEB3FORMS_KEY;
-const FORM_URL = process.env.WEB3FORMS_URL;
+const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+const FORM_URL = process.env.NEXT_PUBLIC_WEB3FORMS_URL;
 
 const Contact = () => {
   const onSubmit = async (event) => {
