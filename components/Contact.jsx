@@ -52,14 +52,14 @@ const Contact = () => {
             placeholder="Enter your name"
             name="name"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
           />
           <input
             type="email"
             placeholder="Enter your email"
             name="email"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
           />
         </div>
         <textarea
@@ -67,7 +67,7 @@ const Contact = () => {
           placeholder="Enter your message"
           name="message"
           required
-          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          className="w-full px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
         ></textarea>
 
         <button
