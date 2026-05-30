@@ -1,5 +1,13 @@
 "use client";
-import { About, Contact, Header, Navbar, Services, Work } from "@/components";
+import {
+  About,
+  Contact,
+  Footer,
+  Header,
+  Navbar,
+  Services,
+  Work,
+} from "@/components";
 import { Toaster } from "react-hot-toast";
 
 export default function Home() {
@@ -12,6 +20,7 @@ export default function Home() {
       <Services />
       <Work />
       <Contact />
+      <Footer />
     </>
   );
 }
