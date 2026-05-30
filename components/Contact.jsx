@@ -14,7 +14,7 @@ const Contact = () => {
     formData.append("access_key", ACCESS_KEY);
 
     try {
-      const response = await fetch(FORM_URL , {
+      const response = await fetch(FORM_URL, {
         method: "POST",
         body: formData,
       });
@@ -45,17 +45,19 @@ const Contact = () => {
         feedback, please use the form below.
       </p>
 
-      <form className="max-w-2xl mx-auto">
+      <form className="max-w-2xl mx-auto" onSubmit={onSubmit}>
         <div className="grid grid-cols-2 gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
+            name="name"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
           />
           <input
             type="email"
             placeholder="Enter your email"
+            name="email"
             required
             className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
           />
@@ -63,6 +65,7 @@ const Contact = () => {
         <textarea
           rows="6"
           placeholder="Enter your message"
+          name="message"
           required
           className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
         ></textarea>
