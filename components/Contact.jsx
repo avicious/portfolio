@@ -2,6 +2,9 @@ import { assets } from "@/assets/assets";
 import toast from "react-hot-toast";
 import Image from "next/image";
 
+const ACCESS_KEY = process.env.WEB3FORMS_KEY;
+const FORM_URL = process.env.WEB3FORMS_URL;
+
 const Contact = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -11,7 +14,7 @@ const Contact = () => {
     formData.append("access_key", ACCESS_KEY);
 
     try {
-      const response = await fetch("", {
+      const response = await fetch(FORM_URL , {
         method: "POST",
         body: formData,
       });
@@ -28,7 +31,7 @@ const Contact = () => {
       toast.error(error.message);
     }
   };
-  
+
   return (
     <div
       id="contact"
