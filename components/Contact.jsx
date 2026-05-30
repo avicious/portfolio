@@ -3,6 +3,32 @@ import toast from "react-hot-toast";
 import Image from "next/image";
 
 const Contact = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", ACCESS_KEY);
+
+    try {
+      const response = await fetch("", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Thank you for your submission!");
+        event.target.reset();
+      } else {
+        toast.error(data.message);
+      }
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
+  
   return (
     <div
       id="contact"
