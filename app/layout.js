@@ -1,4 +1,5 @@
 import { Outfit, Ovo } from "next/font/google";
+import { Providers } from "@/components/providers";
 import "./globals.css";
 
 // Fonts
@@ -25,8 +26,11 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${outfit.variable} ${ovo.variable} h-full antialiased leading-8 overflow-x-hidden scroll-smooth`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
