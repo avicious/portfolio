@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       className={`${outfit.variable} ${ovo.variable} h-full antialiased leading-8 overflow-x-hidden scroll-smooth`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col dark:bg-dark-theme dark:text-white">
         <Providers>{children}</Providers>
       </body>
     </html>
