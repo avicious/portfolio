@@ -1,7 +1,7 @@
 import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 
-const Work = () => {
+const Work = ({theme}) => {
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
       <h2 className="text-center mb-2 text-lg font-ovo">My Portfolio</h2>
@@ -12,7 +12,7 @@ const Work = () => {
         projects showcasing my expertise in full stack web development.
       </p>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10 dark:text-black">
         {workData.map(({ id, title, description, bgImage }) => (
           <div
             key={id}
@@ -33,10 +33,10 @@ const Work = () => {
       </div>
       <a
         href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-light-hover duration-500"
+        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-light-hover duration-500 dark:text-white dark:border-white dark:hover:bg-dark-hover"
       >
         Show More{" "}
-        <Image src={assets.right_arrow_bold} alt="arrow" className="w-4" />
+        <Image src={ theme === "dark" ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="arrow" className="w-4" />
       </a>
     </div>
   );
