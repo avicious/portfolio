@@ -22,7 +22,7 @@ export default function Home() {
       <About theme={theme} />
       <Services />
       <Work theme={theme} />
-      <Contact theme={theme} />
+      <Contact />
       <Footer theme={theme} />
     </>
   );

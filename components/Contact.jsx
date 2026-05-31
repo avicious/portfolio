@@ -35,7 +35,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-size-[90%_auto]'
+      className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-size-[90%_auto] dark:bg-none'
     >
       <h2 className="text-center mb-2 text-lg font-ovo">Connect with me</h2>
       <p className="text-center text-5xl font-ovo">Get in touch</p>
@@ -52,14 +52,14 @@ const Contact = () => {
             placeholder="Enter your name"
             name="name"
             required
-            className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-dark-hover/30 dark:border-white/90"
           />
           <input
             type="email"
             placeholder="Enter your email"
             name="email"
             required
-            className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-dark-hover/30 dark:border-white/90"
           />
         </div>
         <textarea
@@ -67,11 +67,11 @@ const Contact = () => {
           placeholder="Enter your message"
           name="message"
           required
-          className="w-full px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          className="w-full px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-dark-hover/30 dark:border-white/90"
         ></textarea>
 
         <button
-          className="py-3 px-12 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer"
+          className="py-3 px-12 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:hover:bg-dark-hover dark:border-[0.5px] dark:border-white/90"
           type="submit"
         >
           Submit Now
