@@ -1,6 +1,8 @@
 "use client";
 
+import { assets } from "@/assets/assets";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
@@ -16,9 +18,14 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-800 text-black dark:text-white transition-colors"
+      className="cursor-pointer"
     >
-      {theme === "dark" ? "Switch to Light" : "Switch to Dark"}
+      <Image
+        src={theme === "dark" ? assets.sun_icon : assets.moon_icon}
+        alt="dark mode"
+        className="w-6"
+      />
+      {}
     </button>
   );
 }

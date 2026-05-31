@@ -1,6 +1,7 @@
 import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -67,9 +68,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <button className="cursor-pointer">
-            <Image src={assets.moon_icon} alt="dark mode" className="w-6" />
-          </button>
+          <ThemeToggle />
 
           <a
             href="#contact"
