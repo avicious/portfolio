@@ -20,7 +20,7 @@ export default function Home() {
       <Toaster />
       <Header />
       <About theme={theme} />
-      <Services theme={theme} />
+      <Services />
       <Work theme={theme} />
       <Contact theme={theme} />
       <Footer theme={theme} />
