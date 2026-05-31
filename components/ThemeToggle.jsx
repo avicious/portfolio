@@ -1,12 +1,10 @@
 "use client";
 
 import { assets } from "@/assets/assets";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-export default function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+export default function ThemeToggle({ theme, setTheme }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -25,7 +23,6 @@ export default function ThemeToggle() {
         alt="dark mode"
         className="w-6"
       />
-      {}
     </button>
   );
 }

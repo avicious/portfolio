@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
   const [isScroll, setIsScroll] = useState(false);
 
   const sideMenuRef = useRef();
@@ -68,7 +68,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <ThemeToggle />
+          <ThemeToggle theme={theme} setTheme={setTheme} />
 
           <a
             href="#contact"
