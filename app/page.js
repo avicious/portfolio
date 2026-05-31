@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <Navbar theme={theme} setTheme={setTheme} />
       <Toaster />
-      <Header theme={theme} />
+      <Header />
       <About theme={theme} />
       <Services theme={theme} />
       <Work theme={theme} />
