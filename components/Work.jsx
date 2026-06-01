@@ -1,20 +1,52 @@
-import { assets, workData } from "@/assets/assets";
+import { motion } from "motion/react";
 import Image from "next/image";
+import { assets, workData } from "@/assets/assets";
 
-const Work = ({theme}) => {
+const Work = ({ theme }) => {
   return (
-    <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h2 className="text-center mb-2 text-lg font-ovo">My Portfolio</h2>
-      <p className="text-center text-5xl font-ovo">My Latest Work</p>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="work"
+      className="w-full px-[12%] py-10 scroll-mt-20"
+    >
+      <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="text-center mb-2 text-lg font-ovo"
+      >
+        My Portfolio
+      </motion.h2>
+      <motion.p
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="text-center text-5xl font-ovo"
+      >
+        My Latest Work
+      </motion.p>
 
-      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo">
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
+      >
         Welcome to my web development portfolio! Explore a collection of
         projects showcasing my expertise in full stack web development.
-      </p>
+      </motion.p>
 
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10 dark:text-black">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
+        className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10 dark:text-black"
+      >
         {workData.map(({ id, title, description, bgImage }) => (
-          <div
+          <motion.div
+            whileHover={{ scale: 1.05 }}
             key={id}
             style={{ backgroundImage: `url(${bgImage})` }}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
@@ -28,17 +60,28 @@ const Work = ({theme}) => {
                 <Image src={assets.send_icon} alt="send" className="w-5" />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-      <a
+      </motion.div>
+      <motion.a
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 1.1 }} 
         href=""
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-light-hover duration-500 dark:text-white dark:border-white dark:hover:bg-dark-hover"
       >
         Show More{" "}
-        <Image src={ theme === "dark" ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="arrow" className="w-4" />
-      </a>
-    </div>
+        <Image
+          src={
+            theme === "dark"
+              ? assets.right_arrow_bold_dark
+              : assets.right_arrow_bold
+          }
+          alt="arrow"
+          className="w-4"
+        />
+      </motion.a>
+    </motion.div>
   );
 };
 
