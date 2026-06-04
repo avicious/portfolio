@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import Image from "next/image";
-import { assets, infoList, toolsData } from "@/assets/assets";
+import { assets, infoList } from "@/assets/assets";
 
 const About = ({ theme }) => {
   return (
@@ -83,32 +83,6 @@ const About = ({ theme }) => {
                 <p className="text-gray-600 text-sm dark:text-white/80">
                   {description}
                 </p>
-              </motion.li>
-            ))}
-          </motion.ul>
-
-          <motion.h4
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.3 }}
-            className="my-6 text-gray-700 font-ovo dark:text-white"
-          >
-            My Tools
-          </motion.h4>
-
-          <motion.ul
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.5 }}
-            className="flex items-center gap-3 sm:gap-5"
-          >
-            {toolsData.map(({ id, tool }) => (
-              <motion.li
-                whileHover={{ scale: 1.1 }}
-                key={id}
-                className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500"
-              >
-                <Image src={tool} alt="tool" className="w-5 sm:w-7" />
               </motion.li>
             ))}
           </motion.ul>
