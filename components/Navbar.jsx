@@ -61,9 +61,6 @@ const Navbar = ({ theme, setTheme }) => {
           <li>
             <a href="#work">My Work</a>
           </li>
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
         </ul>
 
         <div className="flex items-center gap-4">
