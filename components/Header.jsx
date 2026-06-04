@@ -21,7 +21,7 @@ const Header = () => {
         transition={{ duration: 0.8, delay: 0.5 }}
         className="text-3xl sm:text-6xl lg:text-[66px] font-ovo"
       >
-        full stack web developer
+        a web developer
       </motion.p>
 
       <motion.p
