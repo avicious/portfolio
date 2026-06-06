@@ -45,7 +45,7 @@ const Services = () => {
       >
         {serviceData.map(({ id, icon, title, description, link }) => (
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            
             key={id}
             className="border border-gray-400 rounded-lg px-8 py-12 cursor-pointer hover:shadow-light hover:bg-light-hover hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-white"
           >
