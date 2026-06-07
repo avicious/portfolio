@@ -29,7 +29,9 @@ const Work = ({ theme }) => {
       </motion.p>
 
       <motion.p
-        
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
       >
         Welcome to my web development portfolio! Explore a collection of
