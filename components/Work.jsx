@@ -39,7 +39,9 @@ const Work = ({ theme }) => {
       </motion.p>
 
       <motion.div
-        
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.9 }}
         className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10 dark:text-black"
       >
         {workData.map(({ id, title, description, bgImage }) => (
