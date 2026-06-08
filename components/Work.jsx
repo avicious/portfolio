@@ -46,7 +46,7 @@ const Work = ({ theme }) => {
       >
         {workData.map(({ id, title, description, bgImage }) => (
           <motion.div
-            whileHover={{ scale: 1.05 }}
+            
             key={id}
             style={{ backgroundImage: `url(${bgImage})` }}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
