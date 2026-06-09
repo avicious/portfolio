@@ -50,7 +50,9 @@ const Contact = () => {
         Connect with me
       </motion.h2>
       <motion.p
-        
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center text-5xl font-ovo"
       >
         Get in touch
