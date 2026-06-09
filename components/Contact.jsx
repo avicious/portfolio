@@ -42,9 +42,7 @@ const Contact = () => {
       className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-no-repeat bg-center bg-size-[90%_auto] dark:bg-none'
     >
       <motion.h2
-        initial={{ y: -20, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        
         className="text-center mb-2 text-lg font-ovo"
       >
         Connect with me
