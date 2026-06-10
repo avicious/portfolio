@@ -87,9 +87,7 @@ const Contact = () => {
             className="flex-1 px-3 py-2 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:bg-dark-hover/30 dark:border-white/90"
           />
           <motion.input
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
+            
             type="email"
             placeholder="Enter your email"
             name="email"
