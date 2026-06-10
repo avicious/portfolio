@@ -77,9 +77,7 @@ const Contact = () => {
       >
         <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 mt-10 mb-8">
           <motion.input
-            initial={{ x: -50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 1.1 }}
+            
             type="text"
             placeholder="Enter your name"
             name="name"
