@@ -109,7 +109,7 @@ const Contact = () => {
         ></motion.textarea>
 
         <motion.button
-          
+          whileHover={{ scale: 1.05 }}
           className="py-3 px-12 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:hover:bg-dark-hover dark:border-[0.5px] dark:border-white/90"
           type="submit"
         >
